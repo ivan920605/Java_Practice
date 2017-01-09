@@ -18,6 +18,7 @@ public @interface TesterInfo
 
 	String[] tags() default "";
 
+	String createdBy() default "Ivan";
 
 	String lastModified() default "09/01/2017";
 }

@@ -2,6 +2,7 @@ package ivan.java.pratice.annotation;
 
 import ivan.java.pratice.annotation.TesterInfo.Priority;
 
+@TesterInfo(priority = Priority.HIGH, tags = { "enginner1,enginner2" }, createdBy = "ivan")
 public class TestExample
 {
 	@Test
