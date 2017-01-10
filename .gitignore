@@ -50,3 +50,5 @@ Temporary Items
 #project setting
 .classpath
 .project
+.settings
+/bin/
