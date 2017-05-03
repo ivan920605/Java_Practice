@@ -3,6 +3,12 @@ package ivan.java.pratice.annotation;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
+/**
+ * 
+ * 注解处理器
+ * @author lchen283
+ *
+ */
 public class RunTest
 {
 

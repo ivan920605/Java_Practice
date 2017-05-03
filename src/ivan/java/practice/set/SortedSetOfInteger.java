@@ -10,7 +10,7 @@ public class SortedSetOfInteger
 	{
 		Random random = new Random(47);
 		Set<Integer> intset = new TreeSet<>();
-		for (int i = 0; i < 10000; i++)
+		for (int i = 0; i < 1000; i++)
 		{
 			intset.add(random.nextInt(30));
 		}
