@@ -7,6 +7,7 @@ import java.util.Set;
  */
 
 import javax.annotation.processing.AbstractProcessor;
+import javax.annotation.processing.ProcessingEnvironment;
 import javax.annotation.processing.RoundEnvironment;
 import javax.annotation.processing.SupportedAnnotationTypes;
 import javax.annotation.processing.SupportedSourceVersion;
@@ -18,6 +19,12 @@ import javax.lang.model.element.TypeElement;
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class InterfaceExtractorProcessor extends AbstractProcessor
 {
+	
+	@Override
+	public synchronized void init(ProcessingEnvironment processingEnv)
+	{
+		
+	}
 
 	@Override
 	public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv)
@@ -25,7 +32,7 @@ public class InterfaceExtractorProcessor extends AbstractProcessor
 
 		for (final Element element : roundEnv.getElementsAnnotatedWith(ExtractInterface.class)) {
 			if (element instanceof TypeElement) {
-				
+
 			}
 		}
 		return false;
